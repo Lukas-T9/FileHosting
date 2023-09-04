@@ -6,7 +6,7 @@ import datetime
 
 app = Flask(__name__)
 
-globalUrl = "https://file.run-eu-central1.goorm.app"
+globalUrl = "YOUR DOMAIN"
 MAX_FILE_STORAGE_DAYS = 14
 
 
