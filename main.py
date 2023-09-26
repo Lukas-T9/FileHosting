@@ -29,9 +29,10 @@ def download_file():
     if response.status_code == 200:
         file_content = response.content
         # Отправляем файл пользователю с указанием имени для скачивания
-        return send_file(io.BytesIO(file_content), as_attachment=True, attachment_filename=filename)
+        return send_file(io.BytesIO(file_content), as_attachment=True, download_name=filename)
     else:
         return "Ошибка при загрузке файла"
+
 
 
 
